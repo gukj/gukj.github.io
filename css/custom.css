@@ -1,0 +1,17 @@
+@font-face {
+    font-family: customItalic;
+    src: url(../fonts/Italic.ttf);
+}
+
+@font-face {
+    font-family: customRegular;
+    src: url(../fonts/Regular.ttf);
+}
+
+.customItalic {
+    font-family: customItalic;
+}
+
+.customRegular {
+    font-family: customRegular;
+}
