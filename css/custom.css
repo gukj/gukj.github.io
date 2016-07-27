@@ -15,3 +15,19 @@
 .customRegular {
     font-family: customRegular;
 }
+
+.customNavigationItem {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+.nav-container {
+    text-align: center;
+}
+.nav-container ul {
+    display: inline-block;
+}
+
+#dribbbleNavItem a:hover {
+    color: #EA4C89;
+}

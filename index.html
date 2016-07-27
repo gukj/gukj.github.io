@@ -20,17 +20,15 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body id="home">
-    <nav class="navbar navbar-light bg-faded">
-      <div class="container">
-        <button type="button" data-toggle="collapse" data-target="#collapsingNavbar" class="navbar-toggler hidden-sm-up">&#9776;</button>
-        <div id="collapsingNavbar" class="collapse navbar-toggleable-xs">
-          <ul class="nav navbar-nav pull-sm-right">
-            <li id="homeNavItem" class="nav-item"><a href="index.html" class="nav-link">Item 1</a></li>
-            <li id="productNavItem" class="nav-item p-l-2"><a href="product.html" class="nav-link">Item 2</a></li>
-            <li id="pricingNavItem" class="nav-item p-l-2"><a href="pricing.html" class="nav-link">Item 3</a></li>
-            <li id="aboutNavItem" class="nav-item p-l-2"><a href="about.html" class="nav-link">Item 4</a></li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-light bg-faded nav-container">
+      <div class="row p-y-1"><a href="index.html"><img src="img/Logotype.svg" class="img-fluid center-block"></a></div>
+      <div class="row">
+        <ul class="nav navbar-nav nav-justified">
+          <li id="homeNavItem" class="nav-item"><a href="index.html" class="nav-link customNavigationItem">HOME</a></li>
+          <li id="contactNavItem" class="nav-item"><a href="product.html" class="nav-link customNavigationItem">CONTACT</a></li>
+          <li id="aboutNavItem" class="nav-item"><a href="pricing.html" class="nav-link customNavigationItem">ABOUT</a></li>
+          <li id="dribbbleNavItem" class="nav-item"><a href="https://dribbble.com/gukj" class="nav-link customNavigationItem">DRIBBBLE</a></li>
+        </ul>
       </div>
     </nav>
     <!-- Set current navigation item to active.-->
@@ -41,9 +39,10 @@
     <div class="container-fluid">
       <div class="container">
         <div class="col-lg-8 col-lg-offset-2 p-y-3">
-          <h1 class="customItalic">Italic font test</h1>
-          <h1 class="customRegular">Regular font test</h1>
-          <hr><img src="img/index/Banner.svg" class="img-fluid">
+          <hr>
+          <h3 class="customItalic p-y-2">The portfolio of Gustav Kjellin.</h3>
+          <h3 class="customRegular">I design interfaces, shape brands and craft things for the web.</h3>
+          <h3 class="customRegular p-b-2">These are some of the things I've worked on</h3>
           <hr>
         </div>
       </div>
