@@ -1,3 +1,11 @@
+/* NOT SURE IF THESE SHOULD BE KEPT
+  IT'S ALL CUSTOM FONT, I THINK GARAMOND
+ */
+
+ html{
+     height:100% !important;
+ }
+
 @font-face {
     font-family: customItalic;
     src: url(../fonts/Italic.ttf);
@@ -16,9 +24,30 @@
     font-family: customRegular;
 }
 
+/* END CUSTOM FONTS */
+
+.logotype-text {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/* Custom navigation stuff */
+
+.navigation-top {
+    height: 0.3rem;
+    background-color: #FFA963;
+}
+
+.logotype-hover:hover {
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
 .customNavigationItem {
     font-weight: 300;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
 }
 
 .nav-container {
@@ -28,6 +57,15 @@
     display: inline-block;
 }
 
+/* Dribbble has it's own hover color, cute right? */
+
 #dribbbleNavItem a:hover {
     color: #EA4C89;
+}
+
+/* Footer */
+
+.footer p{
+    letter-spacing: 2px;
+    font-size: 0.8rem;
 }

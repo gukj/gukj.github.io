@@ -19,34 +19,40 @@
     <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body id="about">
-    <nav class="navbar navbar-light bg-faded nav-container">
-      <div class="row p-y-1"><a href="index.html"><img src="img/Logotype.svg" class="img-fluid center-block"></a></div>
-      <div class="row">
-        <ul class="nav navbar-nav nav-justified">
-          <li id="homeNavItem" class="nav-item"><a href="index.html" class="nav-link customNavigationItem">HOME</a></li>
-          <li id="contactNavItem" class="nav-item"><a href="mailto:gustav.kjellin@me.com" class="nav-link customNavigationItem">CONTACT</a></li>
-          <li id="aboutNavItem" class="nav-item"><a href="about.html" class="nav-link customNavigationItem">ABOUT</a></li>
-          <li id="dribbbleNavItem" class="nav-item"><a href="https://dribbble.com/gukj" class="nav-link customNavigationItem">DRIBBBLE</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Set current navigation item to active.-->
-    <script>
-      var currentPage = document.body.id // Fetch current ID from body tag.
-      document.getElementById(currentPage + 'NavItem').className += ' active'
-    </script>
-    <div class="container-fluid p-y-3">
-      <div class="col-sm-2 col-md-offset-3"><img src="img/Profile.jpg" class="img-fluid img-circle"></div>
-      <div class="col-sm-4">
-        <h3>About</h3>
-        <p>I'm a 23 year old designer, currently living in Stockholm. Apart from working with design I'm pursuing an M.Sc. in Industrial Engineering and Management at KTH.</p>
-        <p>When I'm not doing design or studying, I'm working with visual merchandising at Apple in Täby Centrum.</p>
-      </div>
+  <body id="about"></body>
+  <div class="col-lg-12 navigation-top"></div>
+  <nav class="navbar navbar-light bg-light nav-container">
+    <div class="row p-y-1"><a href="index.html" class="logotype-hover"><img src="img/Logotype.svg" class="img-fluid center-block"></a>
+      <h6 class="logotype-text p-t-2">Gustav Kjellin Design</h6>
     </div>
-    <!-- jQuery first, then Bootstrap JS.-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-    <!-- NOTE: Local Bootstrap JS is availabl-->
-  </body>
+    <div class="row">
+      <ul class="nav navbar-nav nav-justified">
+        <li id="homeNavItem" class="nav-item"><a href="index.html" class="nav-link customNavigationItem">HOME</a></li>
+        <li id="contactNavItem" class="nav-item"><a href="mailto:gustav.kjellin@me.com" class="nav-link customNavigationItem">CONTACT</a></li>
+        <li id="aboutNavItem" class="nav-item"><a href="about.html" class="nav-link customNavigationItem">ABOUT</a></li>
+        <li id="dribbbleNavItem" class="nav-item"><a href="https://dribbble.com/gukj" class="nav-link customNavigationItem">DRIBBBLE</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Set current navigation item to active.-->
+  <script>
+    var currentPage = document.body.id // Fetch current ID from body tag.
+    document.getElementById(currentPage + 'NavItem').className += ' active'
+  </script>
+  <div class="container-fluid p-y-3">
+    <div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-1 col-lg-4 col-lg-offset-3">
+      <h3>About</h3>
+      <p>I'm a 23 year old designer, currently living in Stockholm. Apart from working with design I'm pursuing an M.Sc. in Industrial Engineering and Management at KTH.</p>
+      <p>When I'm not doing design or studying, I'm working with visual merchandising at Apple in Täby Centrum.</p>
+    </div>
+    <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0 col-lg-2 p-t-1"><img src="img/Profile.jpg" class="img-fluid"></div>
+  </div>
+  <div class="col-lg-12 footer bg-warning p-t-1">
+    <p class="text-xs-center p-y-1">&copy; GUSTAV KJELLIN DESIGN 2016
+      <!-- jQuery first, then Bootstrap JS.-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+      <!-- NOTE: Local Bootstrap JS is availabl-->
+    </p>
+  </div>
 </html>
