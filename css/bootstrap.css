@@ -3,8 +3,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
-@import 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i';
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -259,7 +258,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: Futura, "Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura", Futura, "Futura", "Work Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #434343;
@@ -3742,7 +3741,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Futura, "Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura", Futura, "Futura", "Work Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3821,7 +3820,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: Futura, "Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura", Futura, "Futura", "Work Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
