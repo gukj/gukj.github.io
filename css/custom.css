@@ -1,71 +1,68 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i';
 /* NOT SURE IF THESE SHOULD BE KEPT
-  IT'S ALL CUSTOM FONT, I THINK GARAMOND
- */
-
- html{
-     height:100% !important;
- }
+  IT'S ALL CUSTOM FONT */
+html {
+  height: 100% !important; }
 
 @font-face {
-    font-family: customItalic;
-    src: url(../fonts/Italic.ttf);
-}
+  font-family: customItalic;
+  src: url(../fonts/Italic.ttf); }
 
 @font-face {
-    font-family: customRegular;
-    src: url(../fonts/Regular.ttf);
-}
+  font-family: customRegular;
+  src: url(../fonts/Regular.ttf); }
+
+@font-face {
+  font-family: customBold;
+  src: url(../fonts/Bold.ttf); }
 
 .customItalic {
-    font-family: customItalic;
-}
+  font-family: customItalic; }
 
 .customRegular {
-    font-family: customRegular;
-}
+  font-family: customRegular; }
 
 /* END CUSTOM FONTS */
+.strikethrough {
+  text-decoration: line-through; }
 
 .logotype-text {
   text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-size: 1.5rem; }
+
+.index-links {
+  font-family: customBold;
+  font-size: 7.5rem;
+  text-transform: uppercase;
   letter-spacing: 0.2rem;
-}
+  line-height: 9rem;
+  hanging-punctuation: force-end;
+  color: #ffa963; }
+
+.index-links:hover {
+  text-decoration: none;
+  color: #434343; }
+
+@media (max-width: 640px) {
+  .index-links {
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    line-height: 7rem; } }
+
+@media (max-width: 544px) {
+  .index-links {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    line-height: 4.5rem; } }
 
 /* Custom navigation stuff */
-
-.navigation-top {
-    height: 0.3rem;
-    background-color: #FFA963;
-}
-
-.logotype-hover:hover {
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
-}
-
-.customNavigationItem {
-    font-weight: 300;
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
-}
-
-.nav-container {
-    text-align: center;
-}
-.nav-container ul {
-    display: inline-block;
-}
-
-/* Dribbble has it's own hover color, cute right? */
-
-#dribbbleNavItem a:hover {
-    color: #EA4C89;
-}
+.orange-strip {
+  height: 0.3rem;
+  background-color: #ffa963; }
 
 /* Footer */
-
-.footer p{
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-}
+.footer p {
+  letter-spacing: 0.075rem;
+  font-size: 0.8rem; }
