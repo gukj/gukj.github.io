@@ -1,29 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
 @import 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i';
-/* NOT SURE IF THESE SHOULD BE KEPT
-  IT'S ALL CUSTOM FONT */
-html {
-  height: 100% !important; }
-
-@font-face {
-  font-family: customItalic;
-  src: url(../fonts/Italic.ttf); }
-
-@font-face {
-  font-family: customRegular;
-  src: url(../fonts/Regular.ttf); }
-
-@font-face {
-  font-family: customBold;
-  src: url(../fonts/Bold.ttf); }
-
-.customItalic {
-  font-family: customItalic; }
-
-.customRegular {
-  font-family: customRegular; }
-
-/* END CUSTOM FONTS */
 .strikethrough {
   text-decoration: line-through; }
 
@@ -33,7 +9,7 @@ html {
   font-size: 1.5rem; }
 
 .index-links {
-  font-family: customBold;
+  font-weight: bold;
   font-size: 7.5rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
