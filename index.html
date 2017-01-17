@@ -5,9 +5,11 @@
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS (local since we might change stuff in _variables.scss)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS (local since a bunch of stuff changes in _custom.scss)-->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon import-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -18,35 +20,80 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div class="col-lg-12 text-xs-center">
-      <div class="row orange-strip"></div>
-      <div class="row p-y-3"><a href="index.html" class="logotype-hover"><img src="img/Logotype.svg" class="img-fluid center-block"></a>
-        <h6 class="logotype-text p-t-2">Gustav Kjellin Design</h6>
+    <div class="container-fluid">
+      <div class="row color-strip bg-primary"></div>
+      <div class="row pt-5 text-center">
+        <div class="col-lg-12 text-center"><a href="index.html"><img src="img/Logotype.svg" class="img-fluid center-block"></a></div>
       </div>
-      <div class="row orange-strip"></div>
-    </div>
-    <div class="col-lg-12 text-xs-center p-y-2">
-      <div class="row"><a href="logos.html" class="index-links">Logos</a></div>
-      <div class="row"><a href="#" class="index-links strikethrough">Print</a></div>
-      <div class="row"><a href="#" class="index-links strikethrough">Web</a></div>
-      <div class="row"><a href="#" class="index-links hanging-punctuation strikethrough">&nbsp;Misc.</a></div>
-      <div class="row"><a href="#" class="index-links strikethrough">Contact</a></div>
-    </div>
-    <div class="col-lg-12 footer bg-warning p-t-1 hidden-md-down">
-      <div class="col-md-4">
-        <p class="p-y-1">WEBSITE REVISIT No. 03</p>
+      <div class="row pb-5 text-center">
+        <div class="col-lg-12 text-center">
+          <h6 class="logotype-text pt-3">Gustav Kjellin Design</h6>
+        </div>
       </div>
-      <div class="col-md-4 bg-muted"><a href="index.html" class="logotype-hover"><img src="img/Logotype White.svg" class="img-fluid center-block"></a></div>
-      <div class="col-md-4">
-        <p class="text-xs-right p-y-1">&copy; GUSTAV KJELLIN DESIGN, 2017</p>
+      <div class="row color-strip bg-primary"></div>
+    </div>
+    <div class="container-fluid text-center py-5">
+      <div class="row">
+        <div class="col"><a href="logos.html" class="index-links">Logos</a></div>
+      </div>
+      <div class="row">
+        <div class="col"><a href="#" class="index-links strikethrough">Print</a></div>
+      </div>
+      <div class="row">
+        <div class="col"><a href="#" class="index-links strikethrough">Web</a></div>
+      </div>
+      <div class="row">
+        <div class="col"><a href="#" class="index-links hanging-punctuation strikethrough">&nbsp;Misc.</a></div>
+      </div>
+      <div class="row">
+        <div class="col"><a href="contact.html" class="index-links strikethrough">Contact</a></div>
       </div>
     </div>
-    <div class="col-lg-12 footer bg-warning p-y-1 hidden-lg-up">
-      <p class="text-xs-center p-t-1">&copy; GUSTAV KJELLIN DESIGN, 2017</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-5">
+          <div class="row">
+            <div id="currentPantone" class="col-lg-4 bg-primary"></div>
+            <div class="col-lg-8 py-4">
+              <p class="text-muted">CURRENT COLOR</p>
+              <h5>PANTONE 714 C</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-4 py-5">
+          <div class="row">
+            <div class="col-lg-8 py-4 text-right">
+              <p class="text-muted">NEXT COLOR</p>
+              <h5>PANTONE 7699 C</h5>
+            </div>
+            <div id="pantone" class="col-lg-4 bg-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer bg-primary py-3 hidden-md-down text-white">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="pt-3">WEBSITE REVISIT No. 03</p>
+        </div>
+        <div class="col-md-4 text-center"><img src="img/Logotype White.svg" class="img-fluid"></div>
+        <div class="col-md-4 text-right">
+          <p class="pt-3">&copy; GUSTAV KJELLIN DESIGN, 2017</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer bg-primary py-2 hidden-lg-up text-white text-center">
+      <p class="pt-3">&copy; GUSTAV KJELLIN DESIGN, 2017</p>
     </div>
     <!-- jQuery first, then Bootstrap JS.-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-    <!-- NOTE: Local Bootstrap JS is availabl-->
+    <!-- NOTE: Local Bootstrap JS is available in the bootstrap config folders-->
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/pantone.js"></script>
   </body>
 </html>

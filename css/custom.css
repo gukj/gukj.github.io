@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
-.strikethrough {
-  text-decoration: line-through; }
+.bg-next {
+  background-color: #40647C !important; }
+
+.c-next {
+  color: #40647C !important; }
 
 .logotype-text {
   text-transform: uppercase;
@@ -32,12 +35,12 @@
     letter-spacing: 0.2rem;
     line-height: 4.5rem; } }
 
-/* Custom navigation stuff */
-.orange-strip {
-  height: 0.3rem;
-  background-color: #ffa963; }
-
-/* Footer */
 .footer p {
   letter-spacing: 0.075rem;
   font-size: 0.8rem; }
+
+.strikethrough {
+  text-decoration: line-through; }
+
+.color-strip {
+  height: 0.3rem; }
