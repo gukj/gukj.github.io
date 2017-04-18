@@ -1,0 +1,21 @@
+<!--beerView, 
+	showing only the beers selected in the previous views, as well as some information about each beer-->
+
+<h3>Your Beers</h3>
+
+<div ng-repeat="beer in beers() track by $index">
+	<hr>
+	<h4>{{beer.nameDisplay}}</h4>
+	<h5>{{beer.style.category.name}} </h5>
+	<br>
+	<div class="row">
+	<div class="col"><img class="card-img-top img-thumbnail" ng-src="{{beer.labels.medium}}" /> </div>
+	<div class="col">{{beer.style.description | limitTo:beer.maxTextLength}}<div ng-click="toggleText(beer.id)"><strong>{{beer.infoText}}</strong></div>
+	</div>
+
+	<div class="col"><div class="btn btn-primary" ng-click=remove(beer.id)>Remove</div></div>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>

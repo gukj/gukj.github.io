@@ -1,0 +1,46 @@
+<!-- profileView. 
+	Shows the details of the spotify user currently logged in -->
+<!-- Populates page with data from profileCtrl -->
+<h3>{{profile.display_name}}</h3> 
+<div class="container">
+	<hr>
+	<br>
+	<div class="row">
+		<div class="col-4">
+			<img class="card-img-top img-thumbnail" ng-src="{{profile.images[0].url}}" />
+		</div>
+		<div class="col-1"></div>
+		<div class="col">
+			<br><hr>
+			Username: {{profile.id}}
+			<br>
+			Email: {{profile.email}}
+			<br>
+			Country: {{profile.country}}
+			<br>
+			URI: {{profile.uri}}
+			<hr>
+		</div>
+	</div>
+
+
+	<!-- Error message if no user is logged in -->
+	<div ng-init="checked=true" id ="myModal" data-toggle="modal" data-target="#errorModal">
+    <span ng-if="checked" class="animate-if">
+     <div class="modal" id="errorModal" role="dialog">
+       <div class="modal-dialog modal-sm">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h4 class="modal-title">{{status}}</h4>
+           </div>
+           <div class="modal-body">
+             <img img class="card-img-top img-fluid" ng-src="../img/logo.svg" />
+				 <div class="text-center pt-5">
+					 <ng-include src="'/partials/spotifyAuthView.html'"/>
+				 </div>
+        </div>
+      </div>
+    </span>
+  </div>
+
+</div>

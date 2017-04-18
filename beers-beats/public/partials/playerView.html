@@ -1,0 +1,31 @@
+<!-- playerView, 
+  Playlist sidebar that continuously updates based on which beers are added to the cart.-->
+
+<h3>Preview of Beerified Playlist</h3>
+<hr>
+
+<div class="text-center">
+  <a href="#!/playlist" class="btn btn-sm btn-primary">Start listening!</a>
+</div>
+<br>
+
+<table class="table table-sm small table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Time</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr ng-repeat="song in getPlaylist() | limitTo:10">
+            <th scope="row">{{$index + 1}}</th>
+            <td>{{song.track.name}}</td>
+            <td>{{song.track.artists[0].name}}</td>
+            <td>{{msToMinSec(song.track.duration_ms)}}</td>
+            <td><a href="{{song.track.preview_url}}"><i class="fa fa-play"><i/></a></td>
+      </tr>
+  </tbody>
+</table>

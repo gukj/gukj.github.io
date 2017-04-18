@@ -1,0 +1,15 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Beers&beats red
+$bb-red: #EF4136 !default;
+
+// Set bb-red as primary code-color
+$brand-primary: $bb-red !default;
+
+// Add custom font
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+$bb-font: 'Lato';
+$font-family-sans-serif: $bb-font, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;

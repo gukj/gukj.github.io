@@ -1,0 +1,21 @@
+<!-- Landing page -->
+<div class="jumbotron">
+	<div class="row" >
+		<div class="col">
+			<h1 class="text-center">Welcome to</h1>
+			<br>
+		    <img src="/img/logo.svg" class="d-inline-block align-top pb-5 hidden-sm-down" alt="">
+		</div>
+		<div class="col-4" style="text-align: center">
+			<!-- Loads Spotify button for authentication -->
+			<br>
+			<br>
+		    <div class="text-center pt-5">
+		        <ng-include src="'partials/spotifyAuthView.html'"/>
+		    </div>
+		    <br>
+		    <!-- In order for this application to work, it has to access music on Spotify.-->
+		    <p> Please press the button above to login to your Spotify account.</p>
+		</div>
+	</div>  
+</div>

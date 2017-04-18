@@ -1,0 +1,67 @@
+<!-- beerBagView,
+Sidebar showing the currently selected beers, which also allows the user to remove beers-->
+<h3>Beers in BeerBag: {{counting()}} </h3>
+<hr>
+<div class="text-center">
+	<a href="#!/beer/" class="btn btn-sm btn-primary">Go to Your Beers</a>
+</div>
+<div class="text-center">
+		{{emptyMsg}}
+</div>
+<br>
+
+
+<!-- Show the beers -->
+<div class="dyn-height">
+
+	<div class = "row" ui-draggable="false" drag="beerBag" drag-channel="A" drop-channel="A" ui-on-drop="onDrop()" drop-validate="dropValidate('beerBag', $data)">
+
+		<br>
+		<br>
+			<div class="col-12">
+
+				<div ng-repeat="beer in beerBag">
+				<div class="wrapper">
+
+					<div class = "row">
+
+					    <div class="col-6">
+					    	<a href="#!/selectedBeer/{{beer.beer.id}}">
+					        	<img img class="card-img-top img-thumbnail" ng-src="{{beer.beer.labels.icon}}"/>
+					        </a>
+
+					    </div>
+					   	<div class="col-3">
+					   		<div class = "row">
+				    			<a ng-click="addBeer(beer.beer.id)"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				    		</div>
+				    		<br>
+			         		<div class = "row">
+				    			<a ng-click="removeBeer(beer.beer.id)"><i class="fa fa-minus" aria-hidden="true"></i></a>
+				    		</div>
+			        	</div>
+			        	<div class="col-2">
+				        	<a class="btn btn-danger" ng-click="deleteBeer(beer.beer.id)">
+	  							<i class="fa fa-trash-o" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+
+					    <div class = "row">
+					    	<div class = "padding">
+					    		{{beer.beer.name}}
+			            	</div>
+			        	</div>
+			        	<div class = "row">
+			        		<div class = "padding">
+			            		No: {{beer.value}}
+			            	</div>
+			        	</div>
+			        <br>
+			    </div>
+				</div>
+			</div>
+		<br>
+		<br>
+	</div>
+</div>
