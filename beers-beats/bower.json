@@ -1,0 +1,22 @@
+{
+  "name": "beers-beats",
+  "description": "Service for combining beer drinking with music",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gukj/beers-beats",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-mocks": "1.6.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "~4.x",
+    "angular-route": "1.6.x",
+    "angular-resource": "1.6.x",
+    "angular-animate": "1.6.x",
+    "angular-cookies": "1.6.x",
+    "tether": "1.4.0"
+  },
+  "resolutions": {
+    "tether": "^1.4.0"
+  }
+}

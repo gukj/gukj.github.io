@@ -1,0 +1,24 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "beers-beats",
+  "description": "Service for combining beer drinking with music",
+  "repository": "https://github.com/gukj/beers-beats",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "bower": "^1.8.x"
+  },
+  "main": " app.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "angular-native-dragdrop": "^1.2.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}
